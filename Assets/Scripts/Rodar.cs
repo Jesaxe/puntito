@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Rodar : MonoBehaviour
 {
@@ -9,9 +10,12 @@ public class Rodar : MonoBehaviour
     public GameObject pies1,pies2,mano1,mano2,ojos,piso;
     public bool pies,manos,ojitos;
     public float velocidad2;
+    public Light2D light2d;
 
     void Start()
     {
+        light2d = GameObject.Find("luzCuerpo").GetComponent<Light2D>();
+        light2d.pointLightOuterRadius = 0.2f;
         rb = GetComponent<Rigidbody2D>();
         pies=false;
         manos=false;
@@ -65,6 +69,7 @@ public class Rodar : MonoBehaviour
         }
         if(ojitos)
         {
+            light2d.pointLightOuterRadius = 60;
             ojos.SetActive(true);
         }
     }
