@@ -4,9 +4,14 @@ using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Text text;
+    public int vida;
+    public GameObject Panel;
     private Volume volume;
     private Rodar rodar;
     DepthOfField dof;
@@ -20,6 +25,8 @@ public class GameManager : MonoBehaviour
         volume.profile.TryGet<DepthOfField>(out dof);
         dof.focalLength.value = 300;
         light2d.pointLightOuterRadius = 1.8f;
+        vida = 5;
+        Panel.gameObject.SetActive(false);
 
     }
 
@@ -36,7 +43,15 @@ public class GameManager : MonoBehaviour
             dof.focalLength.value = 300;
             light2d.pointLightOuterRadius = 1.8f;
         }
-       
-      
+        text.text = "Vida: " + vida;
+        if (vida == 0)
+        {
+            Panel.gameObject.SetActive(true);
+        }
+
+    }
+    void Menu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

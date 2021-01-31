@@ -7,7 +7,7 @@ public class Rodar : MonoBehaviour
 {
     public float velocidad;
     public Rigidbody2D rb;
-
+    private GameManager gm;
     public GameObject pies1,pies2,mano1,mano2,ojos,piso;
     public bool pies,manos,ojitos;
     public float velocidad2;
@@ -17,8 +17,7 @@ public class Rodar : MonoBehaviour
     bool puedeag;
     void Start()
     {
-        
-      
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         pies=false;
         manos=false;
@@ -122,9 +121,13 @@ public class Rodar : MonoBehaviour
             collision.gameObject.SetActive(false);
         }
         if (collision.gameObject.tag == "Pies")
-        {
-            print(".");
+        {           
             pies=true;
+            collision.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            gm.vida -= 1;
             collision.gameObject.SetActive(false);
         }
     }

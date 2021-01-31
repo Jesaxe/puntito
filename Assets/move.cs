@@ -5,7 +5,7 @@ using UnityEngine;
 public class move : MonoBehaviour
 {
     public float speedFactor;
-    private Vector2 _pointA, _pointB, _pointC, _pointD;
+    private Vector2 _pointA, _pointB;
     private Vector2 _poslastFrame;
     private SpriteRenderer _sprite;
 
