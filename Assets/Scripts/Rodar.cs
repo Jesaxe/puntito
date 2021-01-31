@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class Rodar : MonoBehaviour
 {
@@ -125,10 +126,34 @@ public class Rodar : MonoBehaviour
             pies=true;
             collision.gameObject.SetActive(false);
         }
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" )
         {
             gm.vida -= 1;
-            collision.gameObject.SetActive(false);
+            if(transform.localScale.x == 0.35f)
+            {
+                rb.AddForce(new Vector2(-2, -1), ForceMode2D.Impulse);
+            }
+            if (transform.localScale.x == -0.35f)
+            {
+                rb.AddForce(new Vector2(2, 1), ForceMode2D.Impulse);
+            }
+
+        }
+        if(collision.gameObject.name == "PisoFinal")
+        {
+            gm.Panel.gameObject.SetActive(true);
+        }
+        if(collision.gameObject.name == "Final")
+        {
+            SceneManager.LoadScene("Level2");
+        }
+        if(collision.gameObject.name == "Final2")
+        {
+            SceneManager.LoadScene("Level3");
+        }
+        if (collision.gameObject.name == "Final3")
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
     public void OnTriggerStay2D(Collider2D collision)

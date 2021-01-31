@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         light2d = GameObject.Find("luzCuerpo").GetComponent<Light2D>();
         volume = GameObject.Find("VOLUME").GetComponent<Volume>();
         rodar = GameObject.Find("Player").GetComponent<Rodar>();
@@ -47,11 +48,13 @@ public class GameManager : MonoBehaviour
         if (vida == 0)
         {
             Panel.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
 
     }
-    void Menu()
+    public void Menu()
     {
         SceneManager.LoadScene("Menu");
+        
     }
 }
