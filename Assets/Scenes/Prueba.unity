@@ -1186,7 +1186,7 @@ Transform:
   m_GameObject: {fileID: 2082663565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.99, y: 3.12, z: -0.6503906}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_Children:
   - {fileID: 1474440065}
   - {fileID: 1424845317}
@@ -1233,6 +1233,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 3
   rb: {fileID: 0}
+  pies1: {fileID: 1953162396}
+  pies2: {fileID: 1120298251}
+  mano1: {fileID: 1424845316}
+  mano2: {fileID: 727458910}
+  ojos: {fileID: 654961614}
+  piso: {fileID: 32101362}
+  pies: 0
+  manos: 0
+  ojitos: 0
+  velocidad2: 2
 --- !u!70 &2082663570
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
