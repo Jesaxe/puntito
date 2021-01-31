@@ -448,6 +448,7 @@ GameObject:
   - component: {fileID: 654961615}
   - component: {fileID: 654961617}
   - component: {fileID: 654961616}
+  - component: {fileID: 654961618}
   m_Layer: 0
   m_Name: Ojos
   m_TagString: Untagged
@@ -538,6 +539,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &654961618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654961614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ca5ba789217a64395ab67c9a733b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &727458910
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +562,7 @@ GameObject:
   - component: {fileID: 727458911}
   - component: {fileID: 727458913}
   - component: {fileID: 727458912}
+  - component: {fileID: 727458914}
   m_Layer: 0
   m_Name: Mano Atras
   m_TagString: Untagged
@@ -639,6 +653,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &727458914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727458910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4f0347f847df84b88436ec36ac4f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1120298251
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +676,7 @@ GameObject:
   - component: {fileID: 1120298252}
   - component: {fileID: 1120298254}
   - component: {fileID: 1120298253}
+  - component: {fileID: 1120298255}
   m_Layer: 0
   m_Name: Pie Adelante
   m_TagString: Untagged
@@ -740,6 +767,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1120298255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120298251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e43117cb81b7654d8ddc42ecd4e7279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1424845316
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,6 +790,7 @@ GameObject:
   - component: {fileID: 1424845317}
   - component: {fileID: 1424845319}
   - component: {fileID: 1424845318}
+  - component: {fileID: 1424845320}
   m_Layer: 0
   m_Name: Mano Adelante
   m_TagString: Untagged
@@ -841,6 +881,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1424845320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424845316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f80c27285ece54fbca6264a3c997c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1474440064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1120,7 @@ GameObject:
   - component: {fileID: 1953162397}
   - component: {fileID: 1953162399}
   - component: {fileID: 1953162398}
+  - component: {fileID: 1953162400}
   m_Layer: 0
   m_Name: Pie Atras
   m_TagString: Untagged
@@ -1158,6 +1211,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1953162400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953162396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd747b054ef974f40970287cdd2013bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2082663565
 GameObject:
   m_ObjectHideFlags: 0
