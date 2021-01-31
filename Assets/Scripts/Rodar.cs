@@ -30,6 +30,7 @@ public class Rodar : MonoBehaviour
         
         Vector3 movimeinto = new Vector3(Input.GetAxis("Horizontal"),0f,0f);
         
+        
         if(pies==false)
         {
             transform.Rotate (new Vector3 (0, 0, Input.GetAxis("Horizontal")*-80) * Time.deltaTime);
@@ -43,6 +44,18 @@ public class Rodar : MonoBehaviour
             pies1.SetActive(true);
             pies2.SetActive(true);
             transform.position += movimeinto *velocidad*Time.deltaTime*velocidad2;
+            if(Input.GetAxis("Horizontal")!=0)
+            {
+                if(Input.GetAxis("Horizontal")>=0)
+                {
+                    transform.localScale=new Vector3(0.35f,0.35f,1);
+                }
+                else
+                {
+                    transform.localScale=new Vector3(-0.35f,0.35f,1);
+                }
+            }
+                
 
         }
         if(manos)
