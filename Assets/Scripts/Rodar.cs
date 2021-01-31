@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Rodar : MonoBehaviour
 {
@@ -9,9 +10,12 @@ public class Rodar : MonoBehaviour
     public GameObject pies1,pies2,mano1,mano2,ojos,piso;
     public bool pies,manos,ojitos;
     public float velocidad2;
+   
 
     void Start()
     {
+        
+      
         rb = GetComponent<Rigidbody2D>();
         pies=false;
         manos=false;
@@ -67,6 +71,7 @@ public class Rodar : MonoBehaviour
         if(ojitos)
         {
             ojos.SetActive(true);
+            
             //desactivar blur y luz
         }
     }
